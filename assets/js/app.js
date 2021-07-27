@@ -1,23 +1,20 @@
 var year = new Date().getFullYear();
 document.getElementById('year').innerHTML = year;
 
-function sliderSet(){
-    const swiper = new Swiper('.swiper-container', {
+function CategoriesSliderSet(){
+    const swiper = new Swiper('.categories-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
         speed: 400,
         spaceBetween:20,
-        slidesPerView: 3,
+        slidesPerView: 6,
         preventClicksPropagation: false,
         preventClicks: false,
         allowTouchMove: false,
-
-        // If we need pagination
-        pagination: {
-          el: '.swiper-pagination',
+        autoplay: {
+          delay: 2000,
         },
-      
         // Navigation arrows
         navigation: {
           nextEl: '.swiper-button-next',
@@ -45,25 +42,28 @@ function sliderSet(){
             spaceBetweenSlides:20
         },
         1366: {
-          slidesPerView: 3,
+          slidesPerView: 4,
           spaceBetweenSlides:20
       },
         1440: {
-          slidesPerView: 3,
+          slidesPerView: 6,
           spaceBetweenSlides:20
       },
          1920: {
-            slidesPerView: 3,
+          slidesPerView: 6,
             spaceBetweenSlides: 20
         }
     }
       });
 }
-
+function loader(){
+  document.getElementById('loader').style.display = 'none';
+}
 
 
 setTimeout(() => {
-  document.getElementById('loader').style.display = 'none';
+  // loader();
+  CategoriesSliderSet();
   
 
-  },2000);
+  },3000);

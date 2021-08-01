@@ -1,19 +1,20 @@
 var year = new Date().getFullYear();
 document.getElementById('year').innerHTML = year;
 
-function CategoriesSliderSet(){
-    const swiper = new Swiper('.categories-container', {
+function SliderSet(name,xxlg,xlg,lg,md,sm,xsm){
+  //6,6,6,4,2,2
+    const swiper = new Swiper('.'+name+'-container', {
         // Optional parameters
         direction: 'horizontal',
         loop: true,
         speed: 400,
         spaceBetween:20,
-        slidesPerView: 6,
+        slidesPerView: xxlg,
         preventClicksPropagation: false,
         preventClicks: false,
         allowTouchMove: false,
         autoplay: {
-          delay: 2000,
+          delay: 6000,
         },
         // Navigation arrows
         navigation: {
@@ -21,36 +22,31 @@ function CategoriesSliderSet(){
           prevEl: '.swiper-button-prev',
         },
       
-        // And if we need scrollbar
-       /*  scrollbar: {
-          el: '.swiper-scrollbar',
-        }, */
-
          breakpoints: {
          320: {
-            slidesPerView: 1,
+            slidesPerView: xsm,
             spaceBetweenSlides: 2
         },
         // when window width is <= 499px
         499: {
-            slidesPerView: 1,
+            slidesPerView: sm,
             spaceBetweenSlides: 2
         },
         // when window width is <= 999px
         999: {
-            slidesPerView: 2,
+            slidesPerView: md,
             spaceBetweenSlides:20
         },
         1366: {
-          slidesPerView: 4,
+          slidesPerView: lg,
           spaceBetweenSlides:20
       },
         1440: {
-          slidesPerView: 6,
+          slidesPerView: xlg,
           spaceBetweenSlides:20
       },
          1920: {
-          slidesPerView: 6,
+          slidesPerView: xxlg,
             spaceBetweenSlides: 20
         }
     }
@@ -63,7 +59,8 @@ function loader(){
 
 setTimeout(() => {
   // loader();
-  CategoriesSliderSet();
+  SliderSet('categories',6,6,6,4,2,2);
+  SliderSet('brand',5,5,5,3,2,2);
   
 
-  },3000);
+  },200);

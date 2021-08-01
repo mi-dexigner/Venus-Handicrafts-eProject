@@ -74,7 +74,7 @@
               <h2 class="logo-name">Venus Handicraft</h2>
             </div>
           </div>
-          <div class="col col-md-8">
+          <div class="col-12 col-md-8 d-none d-md-block d-lg-block d-xl-block">
             <div class="search-wrapper w-100">
               <form class="row g-0">
                 <div class="col-auto">
@@ -97,7 +97,7 @@
                     </option>
                   </select>
                 </div>
-                <div class="col-auto">
+                <div class="col-8">
                   <input
                     type="search"
                     class="form-control"
@@ -113,7 +113,7 @@
               </form>
             </div>
           </div>
-          <div class="col col-md-1 d-none d-lg-block d-xl-block text-end">
+          <div class="col-12 col-md-1 d-none d-md-block d-lg-block d-xl-block text-end">
             <ul class="list-inline user-account">
               <li class="list-inline-item">
                 <a href="#">
@@ -199,15 +199,15 @@
     </header>
     <!-- // end header -->
     <!-- // being navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm d-none d-md-block d-lg-block d-xl-block">
       <div class="container">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="about-us.html">About Us</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -218,7 +218,7 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Categories
+                Products
               </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li><a class="dropdown-item" href="#">Iron Handicrafts</a></li>
@@ -231,7 +231,7 @@
               <a class="nav-link" href="#">Gallery</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="contact-us.html">Contact Us</a>
             </li>
           </ul>
         </div>
@@ -356,72 +356,78 @@
     <section class="categories">
       <div class="container">
         <div class="row">
+          <!-- // being category slide -->        
           <div class="swiper-container categories-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Iron Handicrafts</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Glass Handicrafts</h5>
                   <h6>100 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Brass Handicrafts</h5>
                   <h6>300 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
+                  <i class="category-icon"></i>
                   <h5>Wood Handicrafts</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Aluminium Handicrafts</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Handicraft Decorative</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Tables Wares</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Home Décor</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="shadow-sm p-5 text-center">
+                <div class="category-box">
                   <i class="category-icon"></i>
                   <h5>Candle Accessories</h5>
                   <h6>200 products</h6>
                 </div>
               </div>
             </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
           </div>
+        <!-- // end category slide -->   
         </div>
       </div>
     </section>
@@ -437,6 +443,244 @@
       Handicrafts - Aluminium Handicrafts - Handicraft Decorative - Tables wares
       - Home Décor - Candle Accessories
     </section>
+    <!-- // being blog-section -->
+    <section class="blog-section">
+      <div class="container">
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-8">
+           <div class="heading">
+             <h2>Latest Blog</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat nobis accusamus, ipsum quis excepturi temporibus inventore consequatur quam neque modi eveniet optio dignissimos rem blanditiis itaque et ea molestias possimus!</p>
+           </div>
+          </div>
+        </div>
+        <div class="row  row-cols-1 row-cols-md-3 g-4">
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog01.jpg" class="card-img-top" alt="blog1.jpg">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog02.jpg" class="card-img-top" alt="blog2">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog03.jpg" class="card-img-top" alt="blog3">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog04.jpg" class="card-img-top" alt="blog4">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog05.jpg" class="card-img-top" alt="blog5">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+ <!-- // being single-post -->
+ <div class="col">
+  <div class="card single-blog">
+   
+    <div class="card-body">
+      <a href="#" class="d-block">
+        <img src="assets/img/blog/blog06.jpg" class="card-img-top" alt="blog6">
+    </a>
+    <div class="blog-des mt-4">
+      <h5 class="card-title mb-2"><a href="#">Inteligent Transitions In Design</a></h5>
+      <ul class="admin-post mb-3">
+        <li>
+            <span class="fas fa-user"></span><a href="#admin"> by Admin</a>
+        </li>
+        <li>
+            <p><span class="fas fa-clock"></span> Oct 31, 2020</p>
+        </li>
+        <li>
+            <a href="#comments"><span class="fas fa-comments"></span> 3</a>
+        </li>
+    </ul>
+    <p class="card-text">Nulla eu elementum quam. magna purus, nec. semper at vel,
+      ipsum dolor et init. magna purus, nec.
+  </p>
+</div>
+    </div>
+  </div>
+</div>
+<!-- // end single-post -->
+
+        </div>
+        <div class="row justify-content-center mt-5">
+         <div class="col-md-2">
+          <a href="#" class="button">View All</a>
+         </div>
+        </div>
+      </div>
+    </section>
+    <!-- // end blog-section -->
+    <!-- // being our-brand -->
+    <section class="our-brand">
+      <div class="container">
+        <div class="row">
+          <!-- // being brand-slider -->
+          <div class="swiper-container brand-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-01.png" class="w-100" alt="brand-01">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-02.png" class="w-100" alt="brand-02">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-03.png" class="w-100" alt="brand-03">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-04.png" class="w-100" alt="brand-04">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-05.png" class="w-100" alt="brand-05">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-06.png" class="w-100" alt="brand-06">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-07.png" class="w-100" alt="brand-07">
+              </div>
+              <div class="swiper-slide">
+                <img src="assets/img/brand/brand-08.png" class="w-100" alt="brand-08">
+              </div>
+              
+            </div>
+            <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+          </div>
+          <!-- // end brand-slider -->
+        </div>
+      </div>
+    </section>
+    <!-- // end our-brand -->
     <!-- // being footer -->
     <footer class="footer">
       <div class="container">
@@ -450,7 +694,7 @@
             <div class="col-md-7">
               <div class="search-wrapper w-100">
                 <form class="row g-0">
-                  <div class="col-auto">
+                  <div class="col-9">
                     <input
                       type="search"
                       class="form-control"
@@ -468,7 +712,10 @@
             </div>
             <div class="col-md-2">
               <div class="telephone-sec">
-                <i class="fa fa-phone"></i>
+                
+                <div class="btn-transform-effect footer-top-icon">
+                    <i class="fa fa-phone"></i>
+                </div>
                  <a href="tel:+1123456789">+1 123 4567 89</a>
               </div>
             </div>
@@ -478,7 +725,7 @@
           <div class="widget col-md-3">
             <h5>Contact Us</h5>
             <address>Address: 116 Nhan Hoa,Nhan,Chin</address>
-            <p>Email:shopagiletech.com.vn</p>
+            <p>Email:support@venushandicrafts.com</p>
             <div class="py-3">
               <img src="assets/img/visa.jpg" alt="visa">
               <img src="assets/img/mastercard.jpg" alt="mastercard">
@@ -531,7 +778,7 @@
                 <a href="#">Gallery</a>
               </li>
               <li>
-                <a href="#">Contact Us</a>
+                <a href="contact-us.html">Contact Us</a>
               </li>
               
             </ul>

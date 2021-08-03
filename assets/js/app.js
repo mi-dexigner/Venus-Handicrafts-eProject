@@ -60,7 +60,7 @@ function loader(){
 setTimeout(() => {
   // loader();
   SliderSet('categories',6,6,6,4,2,2);
-  SliderSet('brand',5,5,5,3,2,2);
+  SliderSet('brand',5,5,5,5,3,2);
   
 
   },200);

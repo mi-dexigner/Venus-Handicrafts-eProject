@@ -244,61 +244,61 @@ header .logo h2 {
 
 /* // end Category */
 /* being list-product */
-.list-product{
+.list-product {
   max-width: 220px;
-position: relative;
-margin: 0px;
-padding: 5px;
+  position: relative;
+  margin: 0px;
+  padding: 5px;
 }
-.list-product .wishlist{
+.list-product .wishlist {
   position: absolute;
-  top:0.5rem;
-  right:.85rem;
+  top: 0.5rem;
+  right: 0.85rem;
   z-index: 9;
 }
-.list-product .wishlist .emptyHeart{
-fill:#c9caca;
+.list-product .wishlist .emptyHeart {
+  fill: #c9caca;
 }
-.list-product .wishlist .fillHeart{
-  fill:#feb63c;
+.list-product .wishlist .fillHeart {
+  fill: #feb63c;
 }
-.list-product .thumbnail{
+.list-product .thumbnail {
   background-color: #f4f5f8;
   padding-top: 25px;
   padding-bottom: 25px;
   overflow: hidden;
 }
-.list-product:hover .thumbnail img{
+.list-product:hover .thumbnail img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
-.list-product .thumbnail img{
+.list-product .thumbnail img {
   width: 100%;
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-.list-product-caption{
+.list-product-caption {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-.list-product-caption h2{
+.list-product-caption h2 {
   font-size: 1rem;
   font-weight: 600;
 }
-.list-product-caption .rating{
+.list-product-caption .rating {
   color: #bbbcbb;
 }
-.list-product-caption .rating .fas{
+.list-product-caption .rating .fas {
   color: #feb63c;
 }
-.list-product-caption .rating .far{
+.list-product-caption .rating .far {
   color: #bbbcbb;
 }
-.list-product-caption .price s{
+.list-product-caption .price s {
   color: #bbbcbb;
-  font-size: .75rem;
+  font-size: 0.75rem;
 }
 /* end list-product */
 /* // being blog section */
@@ -541,13 +541,13 @@ ul.admin-post li p {
   width: 100%;
   height: 100%;
   border: 8px solid transparent;
-  border-top-color: #ad60f5;
+  border-top-color: #feb63c;
   border-radius: 50%;
   animation: spinnerOne 1.2s linear infinite;
 }
 .spinner div:nth-child(2) {
   border: 8px solid transparent;
-  border-bottom-color: #ad60f5;
+  border-bottom-color: #feb63c;
   animation: spinnerTwo 1.2s linear infinite;
 }
 
@@ -697,16 +697,15 @@ ul.admin-post li p {
   text-align: center;
 }
 /* // being about */
-.hm_about_wrapper {
+.about_wrapper {
   width: 100%;
-  float: left;
   padding: 80px 0px;
   background-color: #ffffff;
 }
-.hm_about_img {
+.about_img {
   overflow: hidden;
 }
-.hm_about_img img {
+.about_img img {
   -webkit-transform: scale(1);
   transform: scale(1);
   -webkit-transition: 0.5s ease-in-out;
@@ -715,7 +714,7 @@ ul.admin-post li p {
 .hm_about_data a.hm_btn {
   margin-top: 14px;
 }
-.hm_about_img:hover img {
+.about_img:hover img {
   -webkit-transform: scale(1.3);
   transform: scale(1.3);
 }
@@ -758,6 +757,56 @@ ul.admin-post li p {
   color: #feb63c;
 }
 /* // end about */
+/* // being portfolio-box */
+.portfolio-sec {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio-box ul {
+  font-size: 0;
+  text-align: center;
+}
+.portfolio-box ul li {
+  display: inline-block;
+  width: 24%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.portfolio-box ul li .portfolio-item {
+  -webkit-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 1);
+  -moz-box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 1);
+  box-shadow: inset 0px 0px 17px 0px rgba(0, 0, 0, 1);
+  position: relative;
+}
+.portfolio-box ul li .portfolio-item .hover-effect {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.6s ease-in-out;
+  opacity: 0;
+  background-color:  rgba(52, 54, 75, 0.8);
+}
+.portfolio-box ul li .portfolio-item .hover-effect a {
+  color: #fff;
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.portfolio-box ul li:hover .hover-effect {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+/* // end portfolio-box */
 /* // being contact-info */
 .contact-wrapper {
   width: 100%;
@@ -947,6 +996,9 @@ ul.admin-post li p {
   }
   .telephone-sec a {
     font-size: 0.85rem;
+  }
+  .list-product {
+    max-width: 190px;
   }
 }
 /* End Mobile Responisve */

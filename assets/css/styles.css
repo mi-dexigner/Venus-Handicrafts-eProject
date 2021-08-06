@@ -68,7 +68,11 @@ header .container .row {
   padding-right: 15px;
   height: 70px;
 }
-header .logo h2 {
+.logo {
+  display: flex;
+}
+
+.logo h2 {
   color: #ffffff;
   font-size: 1.5rem;
 }
@@ -126,18 +130,19 @@ header .logo h2 {
 }
 /* // end header */
 /* // being navigation */
-.navbar-light .navbar-nav .nav-item {
+.navbar-nav .nav-item {
   position: relative;
 }
-.navbar-light .navbar-nav .nav-link {
+.navbar-nav .nav-link {
   position: relative;
   padding-right: 0;
   padding-left: 0;
   margin-right: 0.5rem;
   margin-left: 0.5rem;
+  color: #292c3d !important;
 }
-.navbar-light .navbar-nav .nav-link.active:after,
-.navbar-light .navbar-nav .nav-link:after {
+.navbar-nav .nav-link.active:after,
+.navbar-nav .nav-link:after {
   content: "";
   position: absolute;
   width: 0px;
@@ -147,18 +152,19 @@ header .logo h2 {
   bottom: 0px;
   transition: all 0.5s ease-in-out;
 }
-.navbar-light .navbar-nav .nav-link.active:after,
-.navbar-light .navbar-nav .nav-link:hover:after {
+.navbar-nav .nav-link.active:after,
+.navbar-nav .nav-link:hover:after {
   width: 100%;
 }
-.navbar-light .navbar-nav .nav-link:focus,
-.navbar-light .navbar-nav .nav-link:hover,
-.navbar-light .navbar-nav .nav-link.active,
-.navbar-light .navbar-nav .show > .nav-link {
+.navbar-nav .nav-link:focus,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
   color: #f27560;
 }
 /* // end navigation */
 /* // being slider-banner */
+
 /* // end slider-banner */
 /* // being banner */
 .banner {
@@ -815,7 +821,6 @@ ul.admin-post li p {
 }
 .contact-box {
   width: 100%;
-  float: left;
   text-align: center;
   border: 2px solid #feb63c;
   padding: 25px;
@@ -984,11 +989,36 @@ ul.admin-post li p {
 }
 
 /* end contact form wrapper */
+/* // being sitemap */
+.sitemap ul li a{
+  color: #292c3d !important;
+}
+.sitemap ul li a.active:after,
+.sitemap ul li a:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 2px;
+  background-color: #f27560;
+  left: 0px;
+  bottom: 0px;
+  transition: all 0.5s ease-in-out;
+}
+.sitemap ul li a.active:after,
+.sitemap ul li a:hover:after {
+  width: 100%;
+}
+.sitemap ul li a:focus,
+.sitemap ul li a:hover,
+.sitemap ul li a.active {
+  color: #f27560;
+}
+/* // end sitemap */
 /* end Pages inner  */
 
 /* Being Mobile Responisve */
 @media (max-width: 1400px) {
-  header .logo h2 {
+ .logo h2 {
     font-size: 1.3rem;
   }
   .banner {
@@ -1000,5 +1030,66 @@ ul.admin-post li p {
   .list-product {
     max-width: 190px;
   }
+}
+@media (max-width:767px) {
+ .logo .btn i{
+    color: #fff;
+  }
+  .list-product {
+    max-width: 154px;
+}
+.list-product-caption .rating span,
+.list-product-caption .rating .far,
+.list-product-caption .rating .fas{
+  font-size: .68rem;
+}
+
+.btn-transform-effect.footer-top-icon::before,
+.btn-transform-effect.footer-top-icon{
+  width:36px;
+  height: 36px;
+}
+.footerBottom p{
+  margin-bottom: 1.5rem;
+}
+.search-wrapper button{
+  display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+font-size: 0.68rem;
+}
+.telephone-sec{
+  justify-content: end;
+}
+.btn-transform-effect.footer-top-icon{
+  margin-right: .85rem;
+}
+.footer-topper .search-wrapper{
+  margin-top: .85rem;
+}
+.telephone-sec a {
+  font-size: 0.75rem;
+}
+header .container .row{
+  height: auto;
+}
+.search-wrapper .form-control{
+  border-radius: 4px 0 0 4px;
+}
+.portfolio-box ul li {
+  display: inline-block;
+  width: 44%;
+  margin-bottom: 15px;
+  margin-right: 15px;
+}
+.contact-box{
+  margin-bottom: .85rem;
+}
+.hm_form .form-group {
+  width: auto;
+  float: none;
+  clear: both;
+}
 }
 /* End Mobile Responisve */

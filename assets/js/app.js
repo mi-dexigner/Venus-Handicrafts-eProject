@@ -6,7 +6,7 @@ function SliderSet(name,xxlg,xlg,lg,md,sm,xsm){
     const swiper = new Swiper('.'+name+'-container', {
         // Optional parameters
         direction: 'horizontal',
-        loop: true,
+        loop: false,
         speed: 400,
         spaceBetween:20,
         slidesPerView: xxlg,
@@ -59,7 +59,7 @@ function loader(){
 
 setTimeout(() => {
   loader();
-  SliderSet('categories',6,6,6,4,2,2);
+  SliderSet('categories',6,6,6,5,3,2);
   SliderSet('brand',5,5,5,5,3,2);
   
 

@@ -1078,6 +1078,9 @@ ul.admin-post li p {
   .banner {
     min-height: 469px;
   }
+  .hm_form .form-group{
+    width:42%;
+  }
   .telephone-sec a {
     font-size: 0.85rem;
   }

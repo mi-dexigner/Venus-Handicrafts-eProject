@@ -1,5 +1,19 @@
+document.addEventListener("DOMContentLoaded", function(){
 var year = new Date().getFullYear();
 document.getElementById('year').innerHTML = year;
+
+  window.addEventListener('scroll', function() {
+      if (window.scrollY > 200) {
+        document.getElementById('navbar_smooth').classList.add('fixed-top');
+        // add padding top to show content behind navbar
+        navbar_height = document.querySelector('.navbar').offsetHeight;
+        document.body.style.paddingTop = navbar_height + 'px';
+      } else {
+        document.getElementById('navbar_smooth').classList.remove('fixed-top');
+         // remove padding top from body
+        document.body.style.paddingTop = '0';
+      } 
+  });
 
 function SliderSet(name,xxlg,xlg,lg,md,sm,xsm){
   //6,6,6,4,2,2
@@ -64,3 +78,6 @@ setTimeout(() => {
   
 
   },200);
+
+
+}); 

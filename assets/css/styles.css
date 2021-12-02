@@ -425,6 +425,15 @@ ul.admin-post li p {
   background-color: #34364b;
   padding: 25px 0px;
   color: #bbbcbb;
+  --fleck-seed: 35458;
+    --fleck-count: 500;
+    --fleck-size-base: 3px;
+    --fleck-color-1: #434343;
+    --fleck-color-2: #262626;
+    --fleck-color-3: #434343;
+    --fleck-color-4: #262626;
+    background-color: #111;
+    background-image: paint(fleck);
 }
 .footer-topper.border-bottom {
   border-bottom: 1px solid #4f5563 !important;
